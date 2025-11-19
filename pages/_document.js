@@ -12,8 +12,8 @@ export default function Document() {
         <link rel="manifest" href="/site.webmanifest" />
 
         {/* Theme Color */}
-        <meta name="theme-color" content="#667eea" />
-        <meta name="msapplication-TileColor" content="#667eea" />
+        <meta name="theme-color" content="#2563EB" />
+        <meta name="msapplication-TileColor" content="#2563EB" />
 
         {/* Additional SEO */}
         <meta name="keywords" content="AI grading, automated grading, rubric generator, teacher tools, education technology, grading software, feedback automation, student assessment" />

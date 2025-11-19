@@ -11,10 +11,10 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg transform group-hover:scale-110 transition-transform">
+            <div className="bg-blue-600 p-2 rounded-lg">
               <GraduationCap className="h-6 w-6 text-white" />
             </div>
-            <span className="text-2xl font-bold gradient-text">GradeGenius</span>
+            <span className="text-2xl font-bold text-gray-900">GradeGenius</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -31,7 +31,7 @@ export default function Navbar() {
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
               Contact
             </Link>
-            <Link href="http://localhost:3002/login" className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transition-shadow">
+            <Link href="http://localhost:3002/login" className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
               Login
             </Link>
           </div>
@@ -59,10 +59,10 @@ export default function Navbar() {
             <Link href="/pricing" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-200 transform hover:translate-x-1">
               Pricing
             </Link>
-            <Link href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-200 transform hover:translate-x-1">
+            <Link href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-200">
               Contact
             </Link>
-            <Link href="http://localhost:3002/login" className="block px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg text-center transition-all duration-200 hover:shadow-lg transform hover:scale-105">
+            <Link href="http://localhost:3002/login" className="block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg text-center hover:bg-blue-700 transition-colors">
               Login
             </Link>
           </div>
