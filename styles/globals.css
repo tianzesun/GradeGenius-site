@@ -42,6 +42,15 @@ body {
   .card-hover {
     @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
   }
+
+  /* Accessibility: Skip link styles */
+  .skip-link {
+    @apply absolute left-0 -top-40 z-50 px-4 py-2 bg-blue-600 text-white font-medium rounded-br-md transform -translate-x-full focus:translate-x-0 transition-transform duration-200;
+  }
+
+  .skip-link.active {
+    @apply -top-40;
+  }
 }
 
 /* Custom scrollbar */
