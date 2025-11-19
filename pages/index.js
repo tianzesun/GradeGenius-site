@@ -195,9 +195,9 @@ export default function Home() {
                 <div className="bg-gradient-to-r from-indigo-600 to-purple-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Shield className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">AI Plagiarism Detection</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Plagiarism Detection Assistant</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Advanced AI scans submissions for plagiarism, paraphrasing, and AI-generated content. Ensure academic integrity with detailed similarity reports.
+                  AI scans for plagiarism, paraphrasing, and AI-generated content, providing similarity scores and evidence—not accusations. You make the final judgment.
                 </p>
               </article>
             </div>
@@ -381,6 +381,80 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Trust & Responsible AI Section */}
+        <section className="section-padding bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden" aria-labelledby="trust-heading">
+          {/* Decorative elements */}
+          <div className="absolute inset-0 opacity-10" aria-hidden="true">
+            <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
+          </div>
+
+          <div className="container-custom relative z-10">
+            <div className="text-center mb-12 sm:mb-16">
+              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                <Shield className="h-4 w-4 text-blue-300" aria-hidden="true" />
+                <span className="text-sm font-medium text-white">Built on Responsible AI</span>
+              </div>
+              <h2 id="trust-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
+                Why Educators Trust GradeGenius
+              </h2>
+              <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4">
+                We've built GradeGenius to address the real concerns educators have about AI grading tools
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+              {/* Trust Factor 1 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/20">
+                <div className="bg-gradient-to-r from-blue-600 to-cyan-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+                  <Users className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">Human-in-the-Loop Design</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  Our AI never auto-grades. It only <strong>suggests</strong> grades and feedback. You always have final control to review, adjust, and approve before students see anything.
+                </p>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  This prevents AI hallucinations where an AI might incorrectly claim a student missed a concept that was actually covered in their work.
+                </p>
+              </div>
+
+              {/* Trust Factor 2 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/20">
+                <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+                  <Shield className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">Responsible Plagiarism Detection</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  We detect plagiarism, paraphrasing, and AI-generated content—but we're transparent about limitations. No tool is 100% accurate.
+                </p>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Our reports show <em>similarity scores</em> and <em>evidence</em>, not accusations. You decide how to handle each case, preventing false positives that could harm innocent students.
+                </p>
+              </div>
+
+              {/* Trust Factor 3 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/20">
+                <div className="bg-gradient-to-r from-green-600 to-emerald-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+                  <Shield className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">FERPA & GDPR Compliant</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  Student data is legally protected. We use enterprise AI agreements with <strong>zero data retention</strong> and host on secure, compliant infrastructure.
+                </p>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Your student essays never train public AI models. All data is encrypted in transit and at rest, meeting strict educational privacy standards.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-gray-300 text-sm max-w-3xl mx-auto px-4">
+                GradeGenius is designed by educators, for educators. We understand that AI is a tool to <strong>assist</strong> your expertise, never replace it.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* How It Works Section */}
         <section className="section-padding bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 relative overflow-hidden" aria-labelledby="how-it-works-heading">
           {/* Decorative background elements */}
@@ -434,9 +508,9 @@ export default function Home() {
                 <div className="bg-gradient-to-r from-cyan-600 to-blue-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl font-bold text-white shadow-xl transform group-hover:scale-110 transition-transform duration-300" aria-hidden="true">
                   3
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Grade with AI</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Review & Approve</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Review AI-assisted feedback suggestions, make adjustments, and release grades—all in a fraction of the time.
+                  Review AI suggestions, make adjustments, and approve final grades. You're always in control—AI assists, you decide.
                 </p>
               </div>
             </div>
