@@ -12,7 +12,10 @@ import {
   FileText,
   Target,
   ArrowRight,
-  Star
+  Star,
+  Award,
+  Shield,
+  Zap
 } from 'lucide-react';
 
 export default function Home() {
@@ -194,6 +197,97 @@ export default function Home() {
                   Students can view grades, feedback, and track their progress through an intuitive, easy-to-use interface.
                 </p>
               </article>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose GradeGenius - Competitive Advantages */}
+        <section className="section-padding bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white" aria-labelledby="advantages-heading">
+          <div className="container-custom">
+            <div className="text-center mb-16">
+              <h2 id="advantages-heading" className="text-4xl md:text-5xl font-bold mb-4">
+                Why Choose GradeGenius Over Crowdmark & Gradescope?
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                See how our AI-powered platform delivers results that traditional grading tools can't match
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Advantage 1 */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 card-hover">
+                <div className="bg-gradient-to-r from-blue-600 to-purple-600 w-14 h-14 rounded-xl flex items-center justify-center mb-6" aria-hidden="true">
+                  <Brain className="h-7 w-7 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3">AI-Powered Automation</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  Unlike Crowdmark and Gradescope, GradeGenius uses advanced AI to automatically generate rubrics, suggest feedback, and ensure consistency across all submissions.
+                </p>
+                <div className="border-t border-white/10 pt-4 mt-4">
+                  <div className="text-green-400 font-medium flex items-center">
+                    <CheckCircle className="h-5 w-5 mr-2" aria-hidden="true" />
+                    <span>10x faster than manual grading</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Advantage 2 */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 card-hover">
+                <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-14 h-14 rounded-xl flex items-center justify-center mb-6" aria-hidden="true">
+                  <Zap className="h-7 w-7 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3">Intelligent Time Savings</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  While Crowdmark and Gradescope offer basic grading workflows, GradeGenius's AI automation reduces grading time by up to 85%, giving you back hours every week.
+                </p>
+                <div className="border-t border-white/10 pt-4 mt-4">
+                  <div className="text-green-400 font-medium flex items-center">
+                    <CheckCircle className="h-5 w-5 mr-2" aria-hidden="true" />
+                    <span>Save 15+ hours per week on average</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Advantage 3 */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 card-hover">
+                <div className="bg-gradient-to-r from-cyan-600 to-blue-600 w-14 h-14 rounded-xl flex items-center justify-center mb-6" aria-hidden="true">
+                  <Award className="h-7 w-7 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3">Superior Feedback Quality</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  GradeGenius doesn't just streamline grading—it enhances feedback quality with AI-assisted suggestions that are personalized, constructive, and aligned with your teaching style.
+                </p>
+                <div className="border-t border-white/10 pt-4 mt-4">
+                  <div className="text-green-400 font-medium flex items-center">
+                    <CheckCircle className="h-5 w-5 mr-2" aria-hidden="true" />
+                    <span>Higher student satisfaction scores</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-16 text-center">
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                With GradeGenius, you're not just grading smarter—you're transforming your entire teaching experience.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  variant="primary" 
+                  size="lg" 
+                  href="http://localhost:3002/login"
+                  className="bg-white text-blue-600 hover:bg-gray-100"
+                >
+                  Try GradeGenius Free
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  href="/contact"
+                  className="border-white text-white hover:bg-white hover:text-blue-600"
+                >
+                  Compare Features
+                </Button>
+              </div>
             </div>
           </div>
         </section>
