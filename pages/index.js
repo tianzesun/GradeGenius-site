@@ -24,7 +24,7 @@ import {
 export default function Home() {
   return (
     <PageLayout>
-      <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+      <div className="bg-white">
         <Navbar />
 
         {/* Hero Section */}
@@ -33,9 +33,9 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Left Content */}
               <div className="space-y-6 sm:space-y-8">
-                <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-md">
-                  <Sparkles className="h-4 w-4 text-purple-600" aria-hidden="true" />
-                  <span className="text-sm font-medium text-gray-700">AI-Powered Grading Platform</span>
+                <div className="inline-flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-full">
+                  <Sparkles className="h-4 w-4 text-blue-600" aria-hidden="true" />
+                  <span className="text-sm font-medium text-gray-900">AI-Powered Grading Platform</span>
                 </div>
 
                 <h1 id="hero-heading" className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
@@ -76,7 +76,7 @@ export default function Home() {
 
               {/* Right Content - Visual */}
               <div className="relative mt-8 lg:mt-0">
-                <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 transform hover:scale-105 transition-transform duration-300" role="img" aria-label="GradeGenius application interface preview">
+                <div className="bg-gray-900 rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-8" role="img" aria-label="GradeGenius application interface preview">
                   <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-3 sm:space-y-4">
                     <div className="flex items-center justify-between flex-wrap gap-2">
                       <span className="text-xs sm:text-sm font-semibold text-gray-700">Assignment Grading</span>
@@ -98,13 +98,13 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-4 mt-4">
+                    <div className="bg-gray-50 rounded-lg p-4 mt-4">
                       <div className="flex items-center justify-between mb-2">
                         <span className="text-xs text-gray-600">Grading Progress</span>
-                        <span className="text-xs font-semibold text-gray-700">24/30 complete</span>
+                        <span className="text-xs font-semibold text-gray-900">24/30 complete</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2" aria-label="Grading progress: 80% complete">
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full" style={{width: '80%'}}></div>
+                        <div className="bg-blue-600 h-2 rounded-full" style={{width: '80%'}}></div>
                       </div>
                     </div>
                   </div>
@@ -136,8 +136,8 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list">
               {/* Feature 1 */}
-              <article className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <article className="bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
+                <div className="bg-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Brain className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">AI-Powered Rubrics</h3>
@@ -147,8 +147,8 @@ export default function Home() {
               </article>
 
               {/* Feature 2 */}
-              <article className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
-                <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <article className="bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
+                <div className="bg-gray-900 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Clock className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Save Time</h3>
@@ -158,8 +158,8 @@ export default function Home() {
               </article>
 
               {/* Feature 3 */}
-              <article className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
-                <div className="bg-gradient-to-r from-cyan-600 to-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <article className="bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
+                <div className="bg-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <FileText className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Smart Feedback</h3>
@@ -169,8 +169,8 @@ export default function Home() {
               </article>
 
               {/* Feature 4 */}
-              <article className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
-                <div className="bg-gradient-to-r from-green-600 to-emerald-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <article className="bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
+                <div className="bg-gray-900 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <LineChart className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Analytics Dashboard</h3>
@@ -180,8 +180,8 @@ export default function Home() {
               </article>
 
               {/* Feature 5 */}
-              <article className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
-                <div className="bg-gradient-to-r from-orange-600 to-red-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <article className="bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
+                <div className="bg-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Target className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Consistency</h3>
@@ -191,8 +191,8 @@ export default function Home() {
               </article>
 
               {/* Feature 6 */}
-              <article className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
-                <div className="bg-gradient-to-r from-indigo-600 to-purple-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <article className="bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
+                <div className="bg-gray-900 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Shield className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Plagiarism Detection Assistant</h3>
@@ -205,17 +205,11 @@ export default function Home() {
         </section>
 
         {/* AI-Powered Benefits */}
-        <section className="section-padding bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white relative overflow-hidden" aria-labelledby="ai-benefits-heading">
-          {/* Decorative elements */}
-          <div className="absolute inset-0 opacity-10" aria-hidden="true">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
-          </div>
-
+        <section className="section-padding bg-gray-900 text-white relative overflow-hidden" aria-labelledby="ai-benefits-heading">
           <div className="container-custom relative z-10">
             <div className="text-center mb-12 sm:mb-16">
-              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-                <Sparkles className="h-4 w-4 text-purple-300" aria-hidden="true" />
+              <div className="inline-flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full mb-6">
+                <Sparkles className="h-4 w-4 text-blue-400" aria-hidden="true" />
                 <span className="text-sm font-medium text-white">Powered by Advanced AI</span>
               </div>
               <h2 id="ai-benefits-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
@@ -228,8 +222,8 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               {/* Benefit 1 */}
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-white/10">
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <div className="bg-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-gray-700">
+                <div className="bg-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Brain className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold mb-3">Smart Rubric Generation</h3>
@@ -249,8 +243,8 @@ export default function Home() {
               </div>
 
               {/* Benefit 2 */}
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-white/10">
-                <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <div className="bg-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-gray-700">
+                <div className="bg-gray-700 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Shield className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold mb-3">Plagiarism Detection</h3>
@@ -270,8 +264,8 @@ export default function Home() {
               </div>
 
               {/* Benefit 3 */}
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-white/10">
-                <div className="bg-gradient-to-r from-cyan-600 to-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <div className="bg-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-gray-700">
+                <div className="bg-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Lightbulb className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold mb-3">Intelligent Feedback</h3>
@@ -291,8 +285,8 @@ export default function Home() {
               </div>
 
               {/* Benefit 4 */}
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-white/10">
-                <div className="bg-gradient-to-r from-green-600 to-emerald-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <div className="bg-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-gray-700">
+                <div className="bg-gray-700 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <TrendingUp className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold mb-3">Learning Analytics</h3>
@@ -328,13 +322,13 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               {/* Testimonial 1 */}
-              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 relative">
-                <Quote className="h-10 w-10 text-purple-300 mb-4" aria-hidden="true" />
+              <div className="bg-gray-50 border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 relative">
+                <Quote className="h-10 w-10 text-gray-300 mb-4" aria-hidden="true" />
                 <p className="text-gray-700 leading-relaxed mb-6 italic">
                   "GradeGenius has transformed my workflow. What used to take me 10 hours now takes less than 2. The AI-generated rubrics are spot-on, and I can customize them effortlessly."
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center text-white font-bold mr-3">
+                  <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold mr-3">
                     Dr
                   </div>
                   <div>
@@ -345,13 +339,13 @@ export default function Home() {
               </div>
 
               {/* Testimonial 2 */}
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 relative">
-                <Quote className="h-10 w-10 text-pink-300 mb-4" aria-hidden="true" />
+              <div className="bg-gray-50 border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 relative">
+                <Quote className="h-10 w-10 text-gray-300 mb-4" aria-hidden="true" />
                 <p className="text-gray-700 leading-relaxed mb-6 italic">
                   "The feedback suggestions are incredibly helpful. They're always constructive and aligned with my teaching style. My students have noticed the improvement in feedback quality."
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center text-white font-bold mr-3">
+                  <div className="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-bold mr-3">
                     MJ
                   </div>
                   <div>
@@ -362,13 +356,13 @@ export default function Home() {
               </div>
 
               {/* Testimonial 3 */}
-              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 relative">
-                <Quote className="h-10 w-10 text-cyan-300 mb-4" aria-hidden="true" />
+              <div className="bg-gray-50 border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 relative">
+                <Quote className="h-10 w-10 text-gray-300 mb-4" aria-hidden="true" />
                 <p className="text-gray-700 leading-relaxed mb-6 italic">
                   "As a TA managing 200+ students, GradeGenius is a lifesaver. The consistency checks ensure fair grading, and the analytics help me identify students who need extra support."
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-600 to-blue-600 flex items-center justify-center text-white font-bold mr-3">
+                  <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold mr-3">
                     EP
                   </div>
                   <div>
@@ -382,73 +376,67 @@ export default function Home() {
         </section>
 
         {/* Trust & Responsible AI Section */}
-        <section className="section-padding bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden" aria-labelledby="trust-heading">
-          {/* Decorative elements */}
-          <div className="absolute inset-0 opacity-10" aria-hidden="true">
-            <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
-          </div>
-
+        <section className="section-padding bg-gray-50" aria-labelledby="trust-heading">
           <div className="container-custom relative z-10">
             <div className="text-center mb-12 sm:mb-16">
-              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-                <Shield className="h-4 w-4 text-blue-300" aria-hidden="true" />
-                <span className="text-sm font-medium text-white">Built on Responsible AI</span>
+              <div className="inline-flex items-center space-x-2 bg-gray-900 text-white px-4 py-2 rounded-full mb-6">
+                <Shield className="h-4 w-4 text-white" aria-hidden="true" />
+                <span className="text-sm font-medium">Built on Responsible AI</span>
               </div>
-              <h2 id="trust-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
+              <h2 id="trust-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 px-4">
                 Why Educators Trust GradeGenius
               </h2>
-              <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4">
+              <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
                 We've built GradeGenius to address the real concerns educators have about AI grading tools
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
               {/* Trust Factor 1 */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/20">
-                <div className="bg-gradient-to-r from-blue-600 to-cyan-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <div className="bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8">
+                <div className="bg-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Users className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-3">Human-in-the-Loop Design</h3>
-                <p className="text-gray-300 leading-relaxed mb-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Human-in-the-Loop Design</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
                   Our AI never auto-grades. It only <strong>suggests</strong> grades and feedback. You always have final control to review, adjust, and approve before students see anything.
                 </p>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-500 text-sm leading-relaxed">
                   This prevents AI hallucinations where an AI might incorrectly claim a student missed a concept that was actually covered in their work.
                 </p>
               </div>
 
               {/* Trust Factor 2 */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/20">
-                <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <div className="bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8">
+                <div className="bg-gray-900 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Shield className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-3">Responsible Plagiarism Detection</h3>
-                <p className="text-gray-300 leading-relaxed mb-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Responsible Plagiarism Detection</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
                   We detect plagiarism, paraphrasing, and AI-generated content—but we're transparent about limitations. No tool is 100% accurate.
                 </p>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-500 text-sm leading-relaxed">
                   Our reports show <em>similarity scores</em> and <em>evidence</em>, not accusations. You decide how to handle each case, preventing false positives that could harm innocent students.
                 </p>
               </div>
 
               {/* Trust Factor 3 */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/20">
-                <div className="bg-gradient-to-r from-green-600 to-emerald-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+              <div className="bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8">
+                <div className="bg-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Shield className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-3">FERPA & GDPR Compliant</h3>
-                <p className="text-gray-300 leading-relaxed mb-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">FERPA & GDPR Compliant</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
                   Student data is legally protected. We use enterprise AI agreements with <strong>zero data retention</strong> and host on secure, compliant infrastructure.
                 </p>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-500 text-sm leading-relaxed">
                   Your student essays never train public AI models. All data is encrypted in transit and at rest, meeting strict educational privacy standards.
                 </p>
               </div>
             </div>
 
             <div className="mt-12 text-center">
-              <p className="text-gray-300 text-sm max-w-3xl mx-auto px-4">
+              <p className="text-gray-600 text-sm max-w-3xl mx-auto px-4">
                 GradeGenius is designed by educators, for educators. We understand that AI is a tool to <strong>assist</strong> your expertise, never replace it.
               </p>
             </div>
@@ -456,18 +444,12 @@ export default function Home() {
         </section>
 
         {/* How It Works Section */}
-        <section className="section-padding bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 relative overflow-hidden" aria-labelledby="how-it-works-heading">
-          {/* Decorative background elements */}
-          <div className="absolute inset-0 opacity-30" aria-hidden="true">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-200 rounded-full blur-3xl"></div>
-          </div>
-
+        <section className="section-padding bg-white relative overflow-hidden" aria-labelledby="how-it-works-heading">
           <div className="container-custom relative z-10">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-md mb-6">
-                <Sparkles className="h-4 w-4 text-purple-600" aria-hidden="true" />
-                <span className="text-sm font-medium text-gray-700">Simple 3-Step Process</span>
+              <div className="inline-flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-full mb-6">
+                <Sparkles className="h-4 w-4 text-blue-600" aria-hidden="true" />
+                <span className="text-sm font-medium text-gray-900">Simple 3-Step Process</span>
               </div>
               <h2 id="how-it-works-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                 How It Works
@@ -479,7 +461,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12" role="list">
               <div className="text-center group" role="listitem">
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl font-bold text-white shadow-xl transform group-hover:scale-110 transition-transform duration-300" aria-hidden="true">
+                <div className="bg-blue-600 w-20 h-20 rounded-xl flex items-center justify-center mx-auto mb-6 text-3xl font-bold text-white" aria-hidden="true">
                   1
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Create Assignment</h3>
@@ -490,9 +472,9 @@ export default function Home() {
 
               <div className="text-center group relative" role="listitem">
                 {/* Connection line for desktop */}
-                <div className="hidden md:block absolute top-10 -left-12 w-24 h-0.5 bg-gradient-to-r from-purple-300 to-pink-300" aria-hidden="true"></div>
+                <div className="hidden md:block absolute top-10 -left-12 w-24 h-0.5 bg-gray-300" aria-hidden="true"></div>
 
-                <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl font-bold text-white shadow-xl transform group-hover:scale-110 transition-transform duration-300" aria-hidden="true">
+                <div className="bg-gray-900 w-20 h-20 rounded-xl flex items-center justify-center mx-auto mb-6 text-3xl font-bold text-white" aria-hidden="true">
                   2
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Students Submit</h3>
@@ -503,9 +485,9 @@ export default function Home() {
 
               <div className="text-center group relative" role="listitem">
                 {/* Connection line for desktop */}
-                <div className="hidden md:block absolute top-10 -left-12 w-24 h-0.5 bg-gradient-to-r from-pink-300 to-cyan-300" aria-hidden="true"></div>
+                <div className="hidden md:block absolute top-10 -left-12 w-24 h-0.5 bg-gray-300" aria-hidden="true"></div>
 
-                <div className="bg-gradient-to-r from-cyan-600 to-blue-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl font-bold text-white shadow-xl transform group-hover:scale-110 transition-transform duration-300" aria-hidden="true">
+                <div className="bg-blue-600 w-20 h-20 rounded-xl flex items-center justify-center mx-auto mb-6 text-3xl font-bold text-white" aria-hidden="true">
                   3
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Review & Approve</h3>
@@ -518,7 +500,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="section-padding bg-gradient-to-r from-blue-600 to-purple-600" aria-labelledby="cta-heading">
+        <section className="section-padding bg-gray-900" aria-labelledby="cta-heading">
           <div className="container-custom text-center text-white">
             <h2 id="cta-heading" className="text-4xl md:text-5xl font-bold mb-6">
               Ready to Transform Your Grading?
@@ -527,19 +509,19 @@ export default function Home() {
               Join thousands of educators who are saving time and providing better feedback with GradeGenius.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                variant="primary" 
-                size="lg" 
+              <Button
+                variant="primary"
+                size="lg"
                 href="http://localhost:3002/login"
-                className="bg-white text-blue-600 hover:bg-gray-100"
+                className="bg-blue-600 text-white hover:bg-blue-700"
               >
                 Get Started Free
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
+              <Button
+                variant="outline"
+                size="lg"
                 href="/contact"
-                className="border-white text-white hover:bg-white hover:text-blue-600"
+                className="border-white text-white hover:bg-gray-800"
               >
                 Contact Sales
               </Button>

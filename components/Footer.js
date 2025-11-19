@@ -3,13 +3,13 @@ import { GraduationCap, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
+              <div className="bg-blue-600 p-2 rounded-lg">
                 <GraduationCap className="h-6 w-6 text-white" />
               </div>
               <span className="text-2xl font-bold">GradeGenius</span>
