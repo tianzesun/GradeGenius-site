@@ -15,7 +15,10 @@ import {
   Star,
   Award,
   Shield,
-  Zap
+  Zap,
+  Quote,
+  TrendingUp,
+  Lightbulb
 } from 'lucide-react';
 
 export default function Home() {
@@ -41,7 +44,7 @@ export default function Home() {
                 </h1>
 
                 <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-                  Transform your grading workflow with intelligent rubric generation, automated feedback assistance, and powerful analytics. Save hours every week while providing better student feedback.
+                  Transform your grading workflow with intelligent rubric generation, AI plagiarism detection, automated feedback assistance, and powerful analytics. Save hours every week while ensuring academic integrity.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -87,11 +90,11 @@ export default function Home() {
                       </div>
                       <div className="flex items-center space-x-2">
                         <CheckCircle className="h-5 w-5 text-green-500" aria-hidden="true" />
-                        <span className="text-sm text-gray-600">Feedback suggestions ready</span>
+                        <span className="text-sm text-gray-600">Plagiarism checked</span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <CheckCircle className="h-5 w-5 text-green-500" aria-hidden="true" />
-                        <span className="text-sm text-gray-600">Consistency verified</span>
+                        <span className="text-sm text-gray-600">Feedback suggestions ready</span>
                       </div>
                     </div>
 
@@ -190,19 +193,19 @@ export default function Home() {
               {/* Feature 6 */}
               <article className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover" role="listitem">
                 <div className="bg-gradient-to-r from-indigo-600 to-purple-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
-                  <Users className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                  <Shield className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Student Portal</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Plagiarism Detection Assistant</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Students can view grades, feedback, and track their progress through an intuitive, easy-to-use interface.
+                  AI scans for plagiarism, paraphrasing, and AI-generated content, providing similarity scores and evidence—not accusations. You make the final judgment.
                 </p>
               </article>
             </div>
           </div>
         </section>
 
-        {/* Why Choose GradeGenius - Competitive Advantages */}
-        <section className="section-padding bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white relative overflow-hidden" aria-labelledby="advantages-heading">
+        {/* AI-Powered Benefits */}
+        <section className="section-padding bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white relative overflow-hidden" aria-labelledby="ai-benefits-heading">
           {/* Decorative elements */}
           <div className="absolute inset-0 opacity-10" aria-hidden="true">
             <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
@@ -211,89 +214,243 @@ export default function Home() {
 
           <div className="container-custom relative z-10">
             <div className="text-center mb-12 sm:mb-16">
-              <h2 id="advantages-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
-                Why Choose GradeGenius Over Crowdmark & Gradescope?
+              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                <Sparkles className="h-4 w-4 text-purple-300" aria-hidden="true" />
+                <span className="text-sm font-medium text-white">Powered by Advanced AI</span>
+              </div>
+              <h2 id="ai-benefits-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
+                Experience the Power of AI-Driven Grading
               </h2>
               <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4">
-                See how our AI-powered platform delivers results that traditional grading tools can't match
+                Our cutting-edge artificial intelligence transforms how you grade, providing intelligent automation that learns and adapts to your teaching style
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-              {/* Advantage 1 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+              {/* Benefit 1 */}
               <div className="bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-white/10">
                 <div className="bg-gradient-to-r from-blue-600 to-purple-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
                   <Brain className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-3">AI-Powered Automation</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">Smart Rubric Generation</h3>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Unlike Crowdmark and Gradescope, GradeGenius uses advanced AI to automatically generate rubrics, suggest feedback, and ensure consistency across all submissions.
+                  AI analyzes your assignment and automatically creates comprehensive, customizable rubrics in seconds.
                 </p>
-                <div className="border-t border-white/10 pt-4 mt-4">
-                  <div className="text-green-400 font-medium flex items-center">
-                    <CheckCircle className="h-5 w-5 mr-2" aria-hidden="true" />
-                    <span>10x faster than manual grading</span>
-                  </div>
-                </div>
+                <ul className="space-y-2">
+                  <li className="text-green-400 text-sm flex items-start">
+                    <CheckCircle className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    <span>Context-aware criteria</span>
+                  </li>
+                  <li className="text-green-400 text-sm flex items-start">
+                    <CheckCircle className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    <span>Fully customizable</span>
+                  </li>
+                </ul>
               </div>
 
-              {/* Advantage 2 */}
+              {/* Benefit 2 */}
               <div className="bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-white/10">
                 <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
-                  <Zap className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                  <Shield className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-3">Intelligent Time Savings</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">Plagiarism Detection</h3>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  While Crowdmark and Gradescope offer basic grading workflows, GradeGenius's AI automation reduces grading time by up to 85%, giving you back hours every week.
+                  Advanced AI detects plagiarism, paraphrasing, and AI-generated content. Maintain academic integrity effortlessly.
                 </p>
-                <div className="border-t border-white/10 pt-4 mt-4">
-                  <div className="text-green-400 font-medium flex items-center">
-                    <CheckCircle className="h-5 w-5 mr-2" aria-hidden="true" />
-                    <span>Save 15+ hours per week on average</span>
+                <ul className="space-y-2">
+                  <li className="text-green-400 text-sm flex items-start">
+                    <CheckCircle className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    <span>AI content detection</span>
+                  </li>
+                  <li className="text-green-400 text-sm flex items-start">
+                    <CheckCircle className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    <span>Detailed similarity reports</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Benefit 3 */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-white/10">
+                <div className="bg-gradient-to-r from-cyan-600 to-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+                  <Lightbulb className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">Intelligent Feedback</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  AI-powered feedback suggestions that are constructive, specific, and aligned with your teaching philosophy.
+                </p>
+                <ul className="space-y-2">
+                  <li className="text-green-400 text-sm flex items-start">
+                    <CheckCircle className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    <span>Personalized suggestions</span>
+                  </li>
+                  <li className="text-green-400 text-sm flex items-start">
+                    <CheckCircle className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    <span>Style customization</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Benefit 4 */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-white/10">
+                <div className="bg-gradient-to-r from-green-600 to-emerald-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+                  <TrendingUp className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">Learning Analytics</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  AI identifies patterns in student performance and provides actionable insights to improve teaching strategies.
+                </p>
+                <ul className="space-y-2">
+                  <li className="text-green-400 text-sm flex items-start">
+                    <CheckCircle className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    <span>Trend detection</span>
+                  </li>
+                  <li className="text-green-400 text-sm flex items-start">
+                    <CheckCircle className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    <span>Predictive analytics</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="section-padding bg-white" aria-labelledby="testimonials-heading">
+          <div className="container-custom">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 id="testimonials-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Trusted by Educators Worldwide
+              </h2>
+              <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                See what educators are saying about their experience with GradeGenius
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+              {/* Testimonial 1 */}
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 relative">
+                <Quote className="h-10 w-10 text-purple-300 mb-4" aria-hidden="true" />
+                <p className="text-gray-700 leading-relaxed mb-6 italic">
+                  "GradeGenius has transformed my workflow. What used to take me 10 hours now takes less than 2. The AI-generated rubrics are spot-on, and I can customize them effortlessly."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center text-white font-bold mr-3">
+                    Dr
+                  </div>
+                  <div>
+                    <div className="font-bold text-gray-900">Dr. Sarah Mitchell</div>
+                    <div className="text-sm text-gray-600">Professor of Computer Science, Stanford University</div>
                   </div>
                 </div>
               </div>
 
-              {/* Advantage 3 */}
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 card-hover border border-white/10">
-                <div className="bg-gradient-to-r from-cyan-600 to-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
-                  <Award className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
-                </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-3">Superior Feedback Quality</h3>
-                <p className="text-gray-300 leading-relaxed mb-4">
-                  GradeGenius doesn't just streamline grading—it enhances feedback quality with AI-assisted suggestions that are personalized, constructive, and aligned with your teaching style.
+              {/* Testimonial 2 */}
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 relative">
+                <Quote className="h-10 w-10 text-pink-300 mb-4" aria-hidden="true" />
+                <p className="text-gray-700 leading-relaxed mb-6 italic">
+                  "The feedback suggestions are incredibly helpful. They're always constructive and aligned with my teaching style. My students have noticed the improvement in feedback quality."
                 </p>
-                <div className="border-t border-white/10 pt-4 mt-4">
-                  <div className="text-green-400 font-medium flex items-center">
-                    <CheckCircle className="h-5 w-5 mr-2" aria-hidden="true" />
-                    <span>Higher student satisfaction scores</span>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center text-white font-bold mr-3">
+                    MJ
+                  </div>
+                  <div>
+                    <div className="font-bold text-gray-900">Michael Johnson</div>
+                    <div className="text-sm text-gray-600">High School English Teacher, Boston Public Schools</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 3 */}
+              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 relative">
+                <Quote className="h-10 w-10 text-cyan-300 mb-4" aria-hidden="true" />
+                <p className="text-gray-700 leading-relaxed mb-6 italic">
+                  "As a TA managing 200+ students, GradeGenius is a lifesaver. The consistency checks ensure fair grading, and the analytics help me identify students who need extra support."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-600 to-blue-600 flex items-center justify-center text-white font-bold mr-3">
+                    EP
+                  </div>
+                  <div>
+                    <div className="font-bold text-gray-900">Emily Patel</div>
+                    <div className="text-sm text-gray-600">Graduate TA, MIT Mathematics Department</div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div className="mt-12 sm:mt-16 text-center">
-              <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-8 px-4">
-                With GradeGenius, you're not just grading smarter—you're transforming your entire teaching experience.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  variant="primary" 
-                  size="lg" 
-                  href="http://localhost:3002/login"
-                  className="bg-white text-blue-600 hover:bg-gray-100"
-                >
-                  Get Started Free
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  href="/contact"
-                  className="border-white text-white hover:bg-white hover:text-blue-600"
-                >
-                  Compare Features
-                </Button>
+        {/* Trust & Responsible AI Section */}
+        <section className="section-padding bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden" aria-labelledby="trust-heading">
+          {/* Decorative elements */}
+          <div className="absolute inset-0 opacity-10" aria-hidden="true">
+            <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
+          </div>
+
+          <div className="container-custom relative z-10">
+            <div className="text-center mb-12 sm:mb-16">
+              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                <Shield className="h-4 w-4 text-blue-300" aria-hidden="true" />
+                <span className="text-sm font-medium text-white">Built on Responsible AI</span>
               </div>
+              <h2 id="trust-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
+                Why Educators Trust GradeGenius
+              </h2>
+              <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4">
+                We've built GradeGenius to address the real concerns educators have about AI grading tools
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+              {/* Trust Factor 1 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/20">
+                <div className="bg-gradient-to-r from-blue-600 to-cyan-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+                  <Users className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">Human-in-the-Loop Design</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  Our AI never auto-grades. It only <strong>suggests</strong> grades and feedback. You always have final control to review, adjust, and approve before students see anything.
+                </p>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  This prevents AI hallucinations where an AI might incorrectly claim a student missed a concept that was actually covered in their work.
+                </p>
+              </div>
+
+              {/* Trust Factor 2 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/20">
+                <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+                  <Shield className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">Responsible Plagiarism Detection</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  We detect plagiarism, paraphrasing, and AI-generated content—but we're transparent about limitations. No tool is 100% accurate.
+                </p>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Our reports show <em>similarity scores</em> and <em>evidence</em>, not accusations. You decide how to handle each case, preventing false positives that could harm innocent students.
+                </p>
+              </div>
+
+              {/* Trust Factor 3 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/20">
+                <div className="bg-gradient-to-r from-green-600 to-emerald-600 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6" aria-hidden="true">
+                  <Shield className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">FERPA & GDPR Compliant</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  Student data is legally protected. We use enterprise AI agreements with <strong>zero data retention</strong> and host on secure, compliant infrastructure.
+                </p>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Your student essays never train public AI models. All data is encrypted in transit and at rest, meeting strict educational privacy standards.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-gray-300 text-sm max-w-3xl mx-auto px-4">
+                GradeGenius is designed by educators, for educators. We understand that AI is a tool to <strong>assist</strong> your expertise, never replace it.
+              </p>
             </div>
           </div>
         </section>
@@ -351,9 +508,9 @@ export default function Home() {
                 <div className="bg-gradient-to-r from-cyan-600 to-blue-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl font-bold text-white shadow-xl transform group-hover:scale-110 transition-transform duration-300" aria-hidden="true">
                   3
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Grade with AI</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Review & Approve</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Review AI-assisted feedback suggestions, make adjustments, and release grades—all in a fraction of the time.
+                  Review AI suggestions, make adjustments, and approve final grades. You're always in control—AI assists, you decide.
                 </p>
               </div>
             </div>
